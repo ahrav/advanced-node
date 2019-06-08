@@ -64,7 +64,7 @@ describe('When logged in', async () => {
 });
 
 describe('User is not logged in', async () => {
-  test('user cann not create blog post', async () => {
+  test('user can not create blog post', async () => {
     const result = await page.evaluate(() => {
       return fetch('/api/blogs', {
         method: 'POST',
